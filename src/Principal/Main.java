@@ -38,8 +38,17 @@ public class Main {
 
         customCollection.removeAll(5);
         System.out.println("Contenido después de remover todos los 5: " + customCollection);
+        
+        customCollection.addFirst(10);
+        System.out.println("Elmentos de la coleccion (se agrega un elemento al principio): " + customCollection);
+        
+        customCollection.addLast(99);
+        System.out.println("Elmentos de la coleccion (se agrega un elemento al final): " + customCollection);
 
         System.out.println("¿La colección está vacía? " + customCollection.isEmpty());
+        
+        
+        
         
         
 

@@ -87,6 +87,18 @@ public class CollectionCustom<T> {
         }
 
         
+        public void addFirst(T element) {
+            capacidadSuficiente();
+            System.arraycopy(array, 0, array, 1, size);
+            array[0] = element;
+            size++;
+        }
+
+        public void addLast(T element) {
+            capacidadSuficiente();
+            array[size] = element;
+            size++;
+        }
         
         public String toString() {
             return Arrays.toString(Arrays.copyOf(array, size));
